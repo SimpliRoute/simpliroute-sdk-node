@@ -1,0 +1,43 @@
+{
+  "name": "simpliroute-sdk-node",
+  "version": "0.0.1",
+  "description": "SimpliRoute NodeJS, TypeScript, JavaScript API SDK.",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "ts-node ./src/index.ts",
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "test": "jest --coverage --verbose",
+    "test:watch": "jest --verbose --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simpliroute/simpliroute-sdk-node.git"
+  },
+  "keywords": [
+    "Typescript"
+  ],
+  "author": "SimpliRoute Developers <developer@simpliroute.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/simpliroute/simpliroute-sdk-node.git/issues"
+  },
+  "homepage": "https://github.com/simpliroute/simpliroute-sdk-node.git#readme",
+  "devDependencies": {
+    "@types/dotenv": "6.1.1",
+    "@types/jest": "^24.0.13",
+    "@types/node": "^12.0.7",
+    "jest": "^24.8.0",
+    "merge": "1.2.1",
+    "ts-jest": "^24.0.2",
+    "ts-lint": "4.5.1",
+    "ts-node": "^8.2.0",
+    "tslint": "^5.17.0",
+    "tslint-xo": "0.16.0",
+    "typescript": "^3.5.1"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "url-search-params-polyfill": "^6.0.0"
+  }
+}

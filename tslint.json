@@ -1,0 +1,11 @@
+{
+    "defaultSeverity": "error",
+    "extends": "tslint-xo/space",
+    "jsRules": {},
+    "rules": {
+        "align": false,
+        "object-curly-spacing": false,
+        "file-name-casing": false
+    },
+    "rulesDirectory": []
+}
