@@ -25,8 +25,8 @@ describe('User Test', () => {
     });
 
     it('Must give an error when call with an invalid token', async () => {
-        mock.onGet(getInfoUrl).reply(401, {});
-        console.log('merci');
+        mock.onGet(getInfoUrl).reply(401);
+
         try {
             await user.getInfoByToken('im_an_invalid_token');
         }

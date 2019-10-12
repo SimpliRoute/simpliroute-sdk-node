@@ -1,4 +1,4 @@
-## ts-node-base
+## simpliroute-sdk
 
 [SimpliRoute](http://simpliroute.com) API SDK  for **NodeJS - JavaScript - TypeScript**, aiming to provide a easy way to integrate your Application with SimpliRoute very easy.
 
