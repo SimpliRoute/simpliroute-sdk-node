@@ -1,15 +1,11 @@
-## simpliroute-sdk-node
+## ts-node-base
 
 [SimpliRoute](http://simpliroute.com) API SDK  for **NodeJS - JavaScript - TypeScript**, aiming to provide a easy way to integrate your Application with SimpliRoute very easy.
 
+### NPM Scripts included
 
-```bash
-$ npm install simpliroute-sdk-node
-```
+- ### Jest test
 
-### Contributting
-
-* ### Run Tests
 ```bash
 # run tests with coverage
 $ npm test
@@ -18,12 +14,18 @@ $ npm test
 $ npm run test:watch
 ```
 
-* ### Build Code
+- ### Build TS Code
+
 ```bash
 # Build Typescript to javascript at dist folder (check tsconfig.json)
-$ npm run build 
+$ npm run build
 
 # build and keep waiting for changes to rebuild
 $ npm run build:watch
 ```
 
+- ### Run code with ts-node
+
+```bash
+$ npm start
+```
