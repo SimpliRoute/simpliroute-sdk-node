@@ -2,6 +2,13 @@
 
 [SimpliRoute](http://simpliroute.com) API SDK  for **NodeJS - JavaScript - TypeScript**, aiming to provide a easy way to integrate your Application with SimpliRoute very easy.
 
+
+### Installation
+```bash
+$ npm install @simpliroute/sdk
+```
+
+
 ### NPM Scripts included
 
 - ### Jest test

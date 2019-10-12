@@ -1,7 +1,7 @@
 {
-  "name": "ts-node-base",
+  "name": "@simpliroute/sdk",
   "version": "0.0.1",
-  "description": "Typescript NodeJS base boilerplate project.",
+  "description": "SimpliRoute NodeJS, TypeScript, JavaScript API SDK",
   "main": "dist/index.js",
   "scripts": {
     "start": "ts-node ./src/index.ts",
@@ -10,14 +10,19 @@
     "test": "jest --coverage --verbose",
     "test:watch": "jest --verbose --watch"
   },
-  "repository": "git+https://github.com/SimpliRoute/ts-node-base.git",
-  "keywords": ["Typescript", "Node", "Boilerplate"],
+  "repository": "git+https://git@github.com:SimpliRoute/simpliroute-sdk-node.git.git",
+  "keywords": [
+    "Typescript",
+    "Node",
+    "SDK",
+    "SimpliRoute"
+  ],
   "author": "SimpliRoute Developers <developers@simpliroute.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/SimpliRoute/ts-node-base.git/issues"
+    "url": "https://git@github.com:SimpliRoute/simpliroute-sdk-node.git.git/issues"
   },
-  "homepage": "https://github.com/SimpliRoute/ts-node-base.git#readme",
+  "homepage": "https://git@github.com:SimpliRoute/simpliroute-sdk-node.git.git#readme",
   "devDependencies": {
     "@types/axios-mock-adapter": "^1.10.0",
     "@types/jest": "24.0.18",
