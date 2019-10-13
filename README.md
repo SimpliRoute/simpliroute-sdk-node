@@ -8,6 +8,18 @@
 $ npm install @simpliroute/sdk
 ```
 
+#### Usage
+```js
+import SimpliRouteSDK from '@simpliroute/sdk';
+
+const simpliSDK = SimpliRouteSDK('yourauthenticationtoken');
+
+(async () => {
+    const user = await simpliSDK.user.describe();
+    console.log(user);
+})();
+
+```
 
 ### NPM Scripts included
 
