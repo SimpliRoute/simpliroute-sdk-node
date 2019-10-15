@@ -1,14 +1,14 @@
 import axios from 'axios';
 import MockAdapter from 'axios-mock-adapter';
 import { User as UserEntity } from '@simpliroute/core/entities';
-import { API_URL } from '../../urls';
+import { Urls } from '../../types';
 
 import userInfo from './fixtures/userInfo';
 import User from '..';
 
 describe('User Test', () => {
     let mock: MockAdapter;
-    const getInfoUrl = `${API_URL}v1/accounts/me/`;
+    const getInfoUrl = `${Urls.ApiProd}v1/accounts/me/`;
 
     beforeAll(() => {
         mock = new MockAdapter(axios);

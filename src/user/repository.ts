@@ -3,14 +3,14 @@ import UserRepository from '@simpliroute/core/user/repository';
 import User from '@simpliroute/core/entities/user';
 import http, { AxiosResponse } from 'axios';
 
-import { API_URL } from '../urls';
+import { Urls } from '../types';
 import mapper from './mapper';
 
 const repository: UserRepository = {
     async getUserAccountInfoByToken(token: string): Promise<User> {
         try {
             const response: AxiosResponse = await http({
-                url: `${API_URL}v1/accounts/me/`,
+                url: `${Urls.ApiProd}v1/accounts/me/`,
                 headers: {
                     Authorization: `Token ${token}`
                 }
