@@ -25,11 +25,13 @@
   "homepage": "https://git@github.com:SimpliRoute/simpliroute-sdk-node.git.git#readme",
   "devDependencies": {
     "@types/axios-mock-adapter": "^1.10.0",
+    "@types/dotenv": "^8.2.0",
     "@types/jest": "24.0.18",
     "@types/node": "12.7.4",
     "@typescript-eslint/eslint-plugin": "2.2.0",
     "@typescript-eslint/parser": "2.2.0",
     "axios-mock-adapter": "^1.17.0",
+    "dotenv": "^8.2.0",
     "eslint": "6.3.0",
     "jest": "24.9.0",
     "ts-jest": "^24.0.2",

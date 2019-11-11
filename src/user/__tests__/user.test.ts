@@ -1,14 +1,14 @@
 import axios from 'axios';
 import MockAdapter from 'axios-mock-adapter';
-import { User as UserEntity } from '@simpliroute/core/entities/user';
-import { Urls } from '../../types';
+import { User as Entity } from '@simpliroute/core/user/entity';
+import { getUrl } from '../../utils';
 
 import userInfo from './fixtures/userInfo';
 import User from '..';
 
 describe('User Test', () => {
     let mock: MockAdapter;
-    const getInfoUrl = `${Urls.ApiProd}v1/accounts/me/`;
+    const getInfoUrl = `${getUrl()}v1/accounts/me/`;
 
     beforeAll(() => {
         mock = new MockAdapter(axios);
@@ -17,7 +17,7 @@ describe('User Test', () => {
     it('Must return the expected User object when call getInfoByToken', async () => {
         mock.onGet(getInfoUrl).reply(200, userInfo);
         const userAPI = User('4412a31e624ej6ca2dbaa34396732c78d3822a1d');
-        const user: UserEntity = await userAPI.describe();
+        const user: Entity = await userAPI.describe();
 
         expect(user.account.planQuantity).toBe(10);
         expect(user.account.timezone).toBe('America/Santiago');

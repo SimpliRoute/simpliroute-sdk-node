@@ -1,4 +1,4 @@
-import { User } from '@simpliroute/core/entities/user';
+import { User } from '@simpliroute/core/user/entity';
 import UserUseCase from '@simpliroute/core/user/usecase';
 import repository from './repository';
 
